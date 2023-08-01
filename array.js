@@ -23,3 +23,13 @@ for(let a=0;a<4;a++){
     
 document.write("<ul>")
 
+//max element in an array 
+function max (arr){ // send a array as a parameter
+let max=-1 // as if not given -1 then it wont work on negative number
+    arr.forEach((er)=>{
+        if (er>max){
+            max=er
+        }
+    })
+    return max
+}

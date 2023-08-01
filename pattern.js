@@ -11,7 +11,8 @@ in this case we can divide tha pattern into 3 parts
 
 for the first part
 
-let i be the number of lines and j be a random value here 10 jend will be no.of stars -1 + j
+let i be the number of lines and j be a random value here 10 jend will be no.of stars 
+like first star be 10 then 11 12 13 14 ...jend will be 14  
 
 diff = -1 as its decreasing by one
 1 ***** 10  14  

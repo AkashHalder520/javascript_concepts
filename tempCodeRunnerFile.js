@@ -1,2 +1,3 @@
-console.log(substr2);
-console.log(substr3);
+ for(j=1;j<=i;j++){
+        str=str+"*"
+    }
