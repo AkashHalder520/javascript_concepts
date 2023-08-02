@@ -33,3 +33,20 @@ let max=-1 // as if not given -1 then it wont work on negative number
     })
     return max
 }
+
+//min element in an array 
+
+function find_minimum(arr){
+    /*Function to find the minimum in the array--> arr 
+      return the minimum value*/
+
+var min = Infinity
+arr.forEach((param)=>{
+    if(param<min){
+        min=param
+    }
+})
+return min
+}
+
+//
