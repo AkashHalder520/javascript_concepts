@@ -32,7 +32,7 @@ for (let x of cars){
     // console.log(x.type)
 }
 for (let x in cars){
-  console.log(x); // only show the index
+  // console.log(x); // only show the index
 }
 let xyz=cars.forEach((item)=>{ return item.color
   // console.log(item,"foreach");
@@ -43,3 +43,20 @@ let opq=cars.map((item)=>{ return item.color
   // console.log(item,"map");
 })
 // console.log(opq);// it can return a new array
+
+// to chaghe a element in the array of objects
+
+// let indexarr=cars.findIndex((item)=>{
+//   return item.color==="red"
+// })
+// cars[indexarr].capacity=20
+// console.log(cars);
+
+
+// if we dont want to manipulate the original array then use map to return new array
+
+let newarr=cars.map((items)=>{
+  // items.color==="green"?console.log("found green"):console.log("not found");
+  items.color==="green"?{...items,"capacity":30}:items
+})
+console.log(newarr);

@@ -41,6 +41,10 @@ document.write("index of=>" +index)
 let lastindex=arv.lastIndexOf("mukesh")
 document.write("lastindex of=>" +lastindex+"<br/>")
 
+//findindex
+let findindex=arv.findIndex((item)=>{return item==="rohit"})// find index of the first occured element it takes a function  
+console.log(findindex,"gfghfghf");
+
 //include function 
 
 let ans= arv.includes("akash")// returns true or false and its case sensitive
