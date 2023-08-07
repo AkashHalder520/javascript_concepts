@@ -55,8 +55,23 @@ let opq=cars.map((item)=>{ return item.color
 
 // if we dont want to manipulate the original array then use map to return new array
 
-let newarr=cars.map((items)=>{
-  // items.color==="green"?console.log("found green"):console.log("not found");
-  items.color==="green"?{...items,"capacity":30}:items
-})
-console.log(newarr);
+
+
+
+let Update = "red"; 
+
+
+let updatedObjects = cars.map(obj => {
+  if (obj.color === Update) {
+    return {
+      ...obj, 
+      color: "Safron",
+      type: "updated type"
+    };
+  }
+  return obj; 
+});
+
+console.log(updatedObjects,"new");
+console.log(cars); 
+
