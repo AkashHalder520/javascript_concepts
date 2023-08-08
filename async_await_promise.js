@@ -18,7 +18,7 @@
 // createdata({name:"Rahul", profession:"software engineering"})
 
 
-//when we run this program only akash and mohit gets displayed not Rahul if we use 1 sec in printdata but if we use 5 second then all names comes . this happens because in 1 second the printdata gets executed and the page refreshed ...and the 2nd method doesnt run
+//when we run this program only akash and mohit gets displayed not Rahul if we use 1 sec in printdata but if we use 5 second then all names comes.this happens because in 1 second the printdata gets executed and the page refreshed ...and the 2nd method doesnt run
 
 // ****callback to solve this**** 
 

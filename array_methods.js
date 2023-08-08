@@ -88,7 +88,7 @@ console.log(text2,typeof(text),"join xyz");
 
 
 //for-each loop
-arr.forEach((value,index)=>{// in for each we 
+arr.forEach((value,index)=>{// in for each we can not retun any value
     document.write(index,":",value)
 })
 
