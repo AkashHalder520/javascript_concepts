@@ -1,6 +1,6 @@
 let str="javascript is a great language"
 let length=str.length;
-document.write("lenght of the string ==>",30,"<br/>")
+// document.write("lenght of the string ==>",30,"<br/>")
 let replace=str.replace("is", "are") // only replace the first occurance
 let str2="       javascript is a great language     "
 console.log(str2)

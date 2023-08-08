@@ -14,6 +14,15 @@
 // console.log(sum);
 // // sum of first n number
 
+//difference between for in loop and for off loop in an array
+let arr=[10,20,30,40]
+var sum=0
+// for(let a=0;a<4;a++){or
+// sum= sum+arr[a];
+for(let a of arr){
+     sum=sum+a
+    }
+console.log("total sum="+sum)
 
 // for in loop
 
