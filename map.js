@@ -35,5 +35,5 @@ cars.map((item)=>{
     console.log(item);
 })
 
-//map method is only used to iterate throug array of objects. and it returns a new array
+//map method is only used to iterate through array. and it returns a new array
 // foreach does not return any array

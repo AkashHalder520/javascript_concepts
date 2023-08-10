@@ -36,7 +36,7 @@ document.writeln("after concat=>"+ c +"<br/>");
 
 //indexof last indexoff
 let arv = ["akash", "rohit", "mukesh", "rohan","mukesh"]
-let index= arv.indexOf("mukesh") //indexof("searchelement", search start index) if not found then returns -1
+let index= arv.indexOf("mukesh") //indexof("searchelement", search start index) it returns the first occured element index if not found then returns -1 
 document.write("index of=>" +index)
 let lastindex=arv.lastIndexOf("mukesh")
 document.write("lastindex of=>" +lastindex+"<br/>")
@@ -69,9 +69,17 @@ function checkReq(param){
 //filter
 let e=num2.filter(checkadult)
 document.write("filter=>",e,"<br/>")
-function checkadult(age){
+function checkadult(age){ //can be used using array function also
     return age>18;
 }
+
+//reduce 
+
+let xx=num2.reduce((item1,item2)=>{ // reducer(accumulator,value)reduces an array to a single value 
+    return item1+item2
+})// this will give t
+console.log(xx,"reduce func");
+
 
 //Array toString() function ... it converts an array to string and returns the reasult
 
