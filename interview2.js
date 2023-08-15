@@ -103,7 +103,24 @@ return -1
 else 
 return  0
 })
-console.log(newarrobj); // we have to compare based on number so we return number
+console.log(newarrobj);  //we have to compare based on number so we return number
+
+//Edit in array of object  property without changing original array of object
+// change the property of colour
+let newarrobj2=cars.map((item)=>{
+    if(item.color=="green"){
+        return {...item,color:"black"}
+    }
+    return item
+})
+console.log(newarrobj2,"object edit");
+
+//write a program to insert into an empty object
+ let arrobj={}
+ if(Object.keys(arrobj).length===0){
+    Object.assign(arrobj,{name:"akash", age:45})
+ }
+ console.log(arrobj);
 
 //Write a function that accepts any number of arguments and returns their sum using the rest parameter.
 let sums=0
@@ -155,3 +172,24 @@ let newarr=arr.filter((item)=>{
     console.log(newarr);
 }
 specifiedlen("akashsdf","asdgasdg","asdgasdg","asdg","asddfsdf","asde")
+
+// Implement a function that takes a variable number of string arguments and returns an array containing only the palindrom
+function palindrom(...args){
+console.log(args);
+let newarra=[]
+args.forEach((item)=>{
+     let axx=""
+     axx=item.split('')
+     console.log(axx);
+    let rev=axx.reverse().join('')
+    console.log(rev);
+    if(item==rev)
+    {
+        newarra.push(item)
+    }
+    
+})
+    console.log(newarra);
+
+}
+palindrom("aqertf","mam")

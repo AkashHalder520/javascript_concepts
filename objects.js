@@ -14,6 +14,9 @@ let a ={
         return this.fname +" "+this.lname // this indicates the current object here its a
     }
 }
-console.log(a.fullname());
-console.log(a.town);
-console.log(a.town.city);
+// console.log(a.fullname());
+// console.log(a.town);
+// console.log(a.town.city);
+for (const key in a) {
+    console.log(a[key]);
+}

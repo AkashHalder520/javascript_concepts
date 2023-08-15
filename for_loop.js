@@ -30,7 +30,8 @@ let obj={
     harry :90, subh: 80 ,akash : 70 , rohan :85
 }
 for (const key in obj) {
-    console.log(key);
+    console.log(key); // for accessing the keys only
+    console.log(obj[key]);// for accesssing key value
 }
 // for (const key of obj) {// this wont work because for of loop required itterable objeccts
 //     console.log(key);
