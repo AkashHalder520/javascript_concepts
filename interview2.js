@@ -94,6 +94,12 @@ let cars = [
         "registration": new Date('2018-03-03'),
         "capacity": 4
       },
+      {
+        "color": "blue",
+        "type": "property",
+        "registration": new Date('2018-03-03'),
+        "capacity": 4
+      },
 ]
 let newarrobj=cars.sort((a,b)=>{
 if(a.color>b.color)
@@ -111,7 +117,7 @@ let newarrobj2=cars.map((item)=>{
     if(item.color=="green"){
         return {...item,color:"black"}
     }
-    return item
+    return item// if we dont do this return item only the one object will be updated rest will not be included
 })
 console.log(newarrobj2,"object edit");
 
@@ -193,3 +199,11 @@ args.forEach((item)=>{
 
 }
 palindrom("aqertf","mam")
+
+// function to reverse of a string
+function reversess(str){
+let wer=str.split(' ');
+console.log(wer.reverse().join(' ')); //join is used to convert array to string 
+
+}
+reversess("My name is akash")

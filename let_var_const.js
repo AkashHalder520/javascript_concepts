@@ -9,6 +9,9 @@ const author= "akash"
     let b =40
     console.log(a,"braces");
     console.log(b,"braces");
+    // author="ramesh"// can not reasign in const
+    console.log(author,"braces");
 }
 console.log(a);
 console.log(b);
+console.log(author);
