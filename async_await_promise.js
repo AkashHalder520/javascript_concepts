@@ -44,6 +44,10 @@
 
 //****promise to solve this****
 
+// A Promise is a special JavaScript object. It produces a value after an asynchronous (aka, async) operation completes successfully, or an error if it does not complete successfully due to time out, network error, and so on.
+
+//Successful call completions are indicated by the resolve function call, and errors are indicated by the reject function call.
+
 // const dataobj=[
 //     {name:"akash", profession:"software engineering"},
 //     {name:"Mohit", profession:"software engineering"}

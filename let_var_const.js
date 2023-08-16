@@ -14,4 +14,5 @@ const author= "akash"
 }
 console.log(a);
 console.log(b);
+//author="ramesh"// con not reasign
 console.log(author);
