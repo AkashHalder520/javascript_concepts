@@ -34,6 +34,10 @@ let arr3=["karan", "asish"]
 let c=arr.concat(arr2,arr3);
 document.writeln("after concat=>"+ c +"<br/>");
 
+// another way of merging 
+let p=[...arr2,...arr3]
+console.log("merge array",p);
+
 //indexof last indexoff
 let arv = ["akash", "rohit", "mukesh", "rohan","mukesh"]
 let index= arv.indexOf("mukesh") //indexof("searchelement", search start index) it returns the first occured element index if not found then returns -1 
