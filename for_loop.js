@@ -37,8 +37,8 @@ for (const key in obj) {
 //     console.log(key);
 // }
 
-for (const key of "isst") {
-    console.log(key,"8");
+for (const value of "isst") {
+    console.log(value); // i s s t
 }
 
 
@@ -47,3 +47,13 @@ const cars = ["BMW", "Volvo", "Mini"];
 for (let x of cars) { // 
 console.log(x);
 }
+
+// FOR EACH
+
+arr.forEach((valuec,keyc)=>{
+    console.log(valuec,"==",keyc);
+});
+
+// obj.forEach(element => {// foreach only array or array of objects
+//    console.log(element); 
+// });

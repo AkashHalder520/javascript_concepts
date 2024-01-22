@@ -31,9 +31,13 @@ let objS={
       registration: new Date('2018-03-03'),
       capacity: 5
 }
+
 cars.map((item)=>{
     console.log(item);
 })
+// objS.map((item)=>{
+//   console.log(item);
+// })  can not execute as it is not a array
 
 //map method is only used to iterate through array. and it returns a new array
 // foreach does not return any array
