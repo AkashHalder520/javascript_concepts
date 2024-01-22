@@ -16,3 +16,14 @@ let welcome3 =(name) => { // r
 console.log(welcome2("i am sending parameter"));
 
 // there are 3 types of function annonimous function and named fucntion
+
+
+// const user={
+//     username:"akash",
+//     price :999,
+//     welcomeMessage: function(){
+//         console.log(`welcome ${this.username} to this website `);
+//     }
+// }
+
+// user.welcomeMessage()

@@ -36,9 +36,12 @@ for (const key in obj) {
 // for (const key of obj) {// this wont work because for of loop required itterable objeccts
 //     console.log(key);
 // }
+
 for (const key of "isst") {
-    console.log(key);
+    console.log(key,"8");
 }
+
+
 
 const cars = ["BMW", "Volvo", "Mini"];
 for (let x of cars) { // 

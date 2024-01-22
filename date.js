@@ -12,7 +12,7 @@
 
 
  // for example to check the time stamps 
- let myTimeStamps= new Date().getTime()
+let myTimeStamps = new Date().getTime()
 console.log(myTimeStamps.toLocaleString());
 // console.log(myTimeStamps.now())
 
