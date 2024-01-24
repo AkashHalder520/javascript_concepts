@@ -52,3 +52,5 @@ const addTwox =function (num){
     return num+2
 }
 console.log(addOne(2));
+
+/* hoesting is a phenomenon in js by which we can access the variable and function even before initializing it */

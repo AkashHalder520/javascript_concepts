@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day" id="xx">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <ol >
+        <li class="xxx">asd</li>
+        <li class="xxx">asd</li>
+        <li class="xxx">asd</li>
+        <li class="xxx">asd</li>
+        <li class="xxx">asd</li>
+        <li class="xxx">asd</li>
+        <li class="xxx">asd</li>
+    </ol>
+</body>
+<script>
+    const parent =document.getElementsByClassName('parent')
+    console.log(parent);
+    const xx=document.getElementById('xx')
+    xx.style.cssText = `
+    color: blue; 
+    background: yellow; 
+    font-size: 16px;`;
+const ol =document.getElementsByClassName("xxx")
+console.log(ol);
+const arr=Array.from(ol)
+console.log(arr);
+arr.map((item)=>{
+    console.log(item);
+    // console.log(item.innerText='akash');
+})
+</script>
+</html>
+
+<!-- htmlcollection to array conversion
+Array.from(htmlcollection) 
+-->

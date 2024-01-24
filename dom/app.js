@@ -15,3 +15,9 @@ console.log(listitem);// returs htmlcollection similar to classname
 const container=document.querySelector(`.list-item`)
 console.log(container); // using query selector we can select any thing and returs the first occurance
 //queryselectrer all for all selection
+
+const attribute= document.getElementById('main-heading').getAttribute('class')
+console.log(attribute,"attribte"); // to get the value of a attribute
+
+document.getElementById('main-heading')
+
