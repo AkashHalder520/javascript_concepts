@@ -16,6 +16,19 @@ div.className="main-div"// giving the div a class name
 //or we can also use setAttribute to set a class
 div.setAttribute("title","title generated")
 div.setAttribute("id","asdf")
+div.innerText="akash halder"
+div.style.background="green"
+
+// all this features are in the memory to attach them we have to use
+// const addtext=document.createTextNode("akash halder")
+document.body.appendChild(div)// attached the div to body
+
+const div2=document.createElement('div')
+div2.className="sec-div"
+div2.innerText="kaushik"
+div2.style.padding="12px"
+div2.style.background="pink"
+div.appendChild(div2)// to make child div inside the parent div
 
 </script>
 </html>
