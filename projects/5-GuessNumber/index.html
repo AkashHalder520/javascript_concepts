@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <!-- <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
+          >Youtube channel</a
+        > -->
+      </nav>
+<div class="main">
+    <div class="main-content">
+        <h1>Gussing Game</h1>
+        <p>This is a gussing game you have to enter a number from 1-100</p>
+        <form class="submitForm">
+            <label for="number-field">Enter your guss</label>
+            <input type="text" id="number-field"  >
+            <input type="submit" value="Submit" id="subBtn">
+        </form>
+    </div>
+    <div class="resultParas">
+        <p >Previous Guesses: <span class="guesses"></span></p>
+        <p >Guesses Remaining: <span class="lastResult">5</span></p>
+        <p class="lowOrHi"></p>
+    </div>
+</div>    
+<script src="./guess.js"></script>
+</body>
+</html>

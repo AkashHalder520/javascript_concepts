@@ -24,6 +24,7 @@ otpForm.addEventListener('submit', function(event) {
         console.log("false");
     // Do something with the OTP value (for example, log it to the console)
     console.log('OTP entered:', otpValue);
+    generated_otp = 0
 
     
 
