@@ -8,6 +8,13 @@ let welcome2= function (name) {
 }
 console.log(welcome2("i am sending parameter"));
 
+// self-invoked function means it will call automatically
+
+(function(){
+    console.log('hello');
+    
+})()
+
 //arrow function
 
 let welcome3 =(name) => { // r
