@@ -473,3 +473,18 @@ const arrValue = ['My', 'name', 'is', 'Jack'];
 
 console.log(arrValue);   // ["My", "name", "is", "Jack"]
 console.log(...arrValue); // My name is Jack
+
+// 15) copy an array and add some element on the  coppied array with out making any effect on first
+
+const arrValueP = ['My', 'name', 'is', 'Jack'];
+let arrValuex= arrValueP
+arrValuex.push("akash")
+console.log(arrValueP);//[ 'My', 'name', 'is', 'Jack', 'akash' ]
+console.log(arrValuex);//[ 'My', 'name', 'is', 'Jack', 'akash' ]
+
+// its affecting 2 array to avoid this 
+
+let arrValuex1=[...arrValueP,'berg']
+console.log(arrValuex1);
+
+// 

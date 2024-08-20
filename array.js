@@ -51,4 +51,11 @@ arr.forEach((param)=>{
 return min
 }
 
-//
+//how to destructure a array 
+
+let [item1,item2,...item3]=arr
+
+console.log(item1);// 20
+console.log(item2);// 10
+console.log(item3);// [ 30, 40 ]
+
