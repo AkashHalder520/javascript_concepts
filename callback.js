@@ -18,14 +18,16 @@ console.log(subresule, "sub");
 // callback hell\
 
 function loadingData(callback) {
-    console.log(callback);
-    
+  console.log(callback);
+
+  //   console.log("1->loading data....");
+
   // suppose we add a set time out here so then the order will ger diturbed ...1st point
   setTimeout(() => {
     console.log("1->loading data....");
-    callback()
+    callback();
   }, 3000);
-  //   console.log("1->loading data....");
+
   // so we can use call back to solve this problem ........2nd point
 }
 function collectingData() {
@@ -33,26 +35,24 @@ function collectingData() {
 }
 
 function approvingData(callback2) {
-    //suppose here also one set time out then again we have to use callback...3rd
-    setTimeout(()=>{
-        console.log("3->approvingData data");
-        callback2()
-    },2000)
-    // console.log("3->approvingData data");
+  //suppose here also one set time out then again we have to use callback...3rd
+  setTimeout(() => {
+    console.log("3->approvingData data");
+    callback2();
+  }, 2000);
+  // console.log("3->approvingData data");
 }
 
 function approved() {
   console.log("4->approved data");
 }
 
-loadingData(function() { 
+loadingData(function () {
   collectingData();
-  approvingData(function(){
+  approvingData(function () {
     approved();
   });
- 
 }); // passing the function
-
 
 // collectingData();
 // approvingData();
