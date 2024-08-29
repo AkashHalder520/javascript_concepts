@@ -46,3 +46,5 @@ function updatingData(){
 loadingData().then(viewingData) // we should not call direct the function viewingData() 
 
 // updatingData()
+
+
