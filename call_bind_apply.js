@@ -52,3 +52,4 @@ printfullname.apply(name2,['hello my frind', 'how are you'])
  */
 // let printx= printfullname.bind(name2)
 // printx()
+
