@@ -17,3 +17,9 @@ console.log(obj2.fname);
 //*The __proto__ property is an internal property (sometimes called a "magic" property) that references the prototype of the object. When you set obj2.__proto__ = obj, you are telling JavaScript that if a property is not found directly on obj2, it should look up the property chain to obj to find it.
 
 */
+
+//! prototype
+ /* //*js objects have a special property called prototype
+        that is either null or refer to another object 
+ */
+ let arr =['akash','romesh','tanusree']
