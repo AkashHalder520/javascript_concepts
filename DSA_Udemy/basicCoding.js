@@ -44,6 +44,44 @@ function  same(arr1,arr2){
     return true
 }
 
-console.log(same([1,2,3,2],[9,1,4,4]));
+// console.log(same([1,2,3,2],[9,1,4,4]));
+
+
+
 //optimised approach 
-/*two seperate loops are more better than two nested loops*/
+/*two seperate loops are more better than two nested loops
+basically we will create 2 objects with unique elements and then compare
+*/
+function sameOptimised(arr1,arr2){
+    const obj1={};
+    const obj2={};
+    for (let i of arr1) {
+      if (!obj1[i]) {
+        obj1[i] = 1;
+      } else {
+        obj1[i] = obj1[i] + 1;
+      }
+    }
+    for (let i of arr2) {
+        if (!obj2[i]) {
+          obj2[i] = 1;
+        } else {
+          obj2[i] = obj2[i] + 1;
+        }
+      }// separated all the elemets in different objects now we can compare the keys
+    //   { '1': 1, '2': 2, '3': 1 }
+    //   { '9': 1, '1': 1, '4': 2 }
+
+      console.log(obj1);
+      console.log(obj2);
+      return Object.keys(obj1).every((data)=>{// in place of map use every to check every element
+        const square= Number (data) * Number (data);
+        console.log(obj2[square],obj1[data]);
+        if(obj2[square]!==obj1[data]){            
+            return false
+        }
+        return true
+      })
+}
+console.log(sameOptimised([1,2,3,2],[9,1,4,4]));
+ 
