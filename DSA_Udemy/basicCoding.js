@@ -1,3 +1,8 @@
+//! frequency counter patterm
+
+
+
+
 //Write a code to count the letter in the sentence or word and return a object
 
 function coutnWords(str) {
