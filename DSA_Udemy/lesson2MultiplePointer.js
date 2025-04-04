@@ -23,7 +23,7 @@ for(let i=0;i<arr.length;i++){
 }
 return arrRes.slice(0,2)// only for the first occurance
 }
-console.log(sumZero([-3,-2,-1,0,1,2,3]));
+// console.log(sumZero([-3,-2,-1,0,1,2,3]));
 
 //!optimised approach
 // basically we will use two pointer approach
@@ -48,7 +48,7 @@ function sumZeroOptimised(arr){
     }
     return undefined
 }
-console.log(sumZeroOptimised([-3,-2,-1,0,1,2,3]));     
+// console.log(sumZeroOptimised([-3,-2,-1,0,1,2,3]));     
 
 //another problem ... count unique values
 /*
@@ -59,9 +59,15 @@ countUniqueValues([-2,-1,-1,0,1]) // 4
 countUniqueValues([1,2,3,4,5]) // 5
 */
 function countUniqueValues(arr){
-let pointer1=0;
-let pointer2=pointer1+1;
-while(pointer1<arr.length){
-    
+let pointer1=0; // pointer in the first element
+let uniqueCounter=0;
+for(let pointer2=1;pointer2<arr.length;pointer2++){  // as pointer 2 is moving so keepin it in for loop
+    if(arr[pointer1]!==arr[pointer2]){
+        uniqueCounter++
+        pointer1=pointer2
+    } 
 }
+return uniqueCounter
 }
+console.log(countUniqueValues([-1,-1,-1,0,1]));
+ 
