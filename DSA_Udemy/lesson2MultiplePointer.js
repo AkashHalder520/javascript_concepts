@@ -61,13 +61,17 @@ countUniqueValues([1,2,3,4,5]) // 5
 function countUniqueValues(arr){
 let pointer1=0; // pointer in the first element
 let uniqueCounter=0;
-for(let pointer2=1;pointer2<arr.length;pointer2++){  // as pointer 2 is moving so keepin it in for loop
+// we need to check the empty also  as at last we are returning uniquecounter +1 
+if (arr.length<=0){
+    return 0
+}
+for(let pointer2=pointer1+1;pointer2<arr.length;pointer2++){  // as pointer 2 is moving so keepin it in for loop
     if(arr[pointer1]!==arr[pointer2]){
         uniqueCounter++
         pointer1=pointer2
     } 
 }
-return uniqueCounter
+return uniqueCounter+1 //when compare -1 0 -->1 and 0 1 --2 it will give 2 unique values  but i will skip the -1 as its also a unique value logically
 }
-console.log(countUniqueValues([-1,-1,-1,0,1]));
+console.log(countUniqueValues([-1,2,4]));
  
